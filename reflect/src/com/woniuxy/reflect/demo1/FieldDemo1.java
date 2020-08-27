@@ -2,7 +2,6 @@ package com.woniuxy.reflect.demo1;
 
 import com.woniuxy.reflect.model.User;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
@@ -17,7 +16,6 @@ public class FieldDemo1 {
 //        System.out.println(c1);
 //        System.out.println(c2);
 //        System.out.println(c3);
-
 
         Field[] fields = c1.getFields();    //public
         Field[] fields1 = c1.getDeclaredFields();   //所有的
