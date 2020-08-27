@@ -27,7 +27,7 @@ public class FieldDemo1 {
 
         //反编译类的属性
         StringBuilder sb = new StringBuilder();
-        sb.append(Modifier.toString(c1.getModifiers())).append("class").append(c1.getSimpleName()).append("{\n");
+        sb.append(Modifier.toString(c1.getModifiers())).append(" ").append("class ").append(c1.getSimpleName()).append("{\n");
         for (Field field : c1.getDeclaredFields()) {
             sb.append("\t").append(Modifier.toString(field.getModifiers())).append(" ").append(field.getType().getSimpleName()).append(" ").append(field.getName()).append(";\n");
         }
