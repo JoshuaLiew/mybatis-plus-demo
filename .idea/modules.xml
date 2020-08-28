@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Git.iml" filepath="$PROJECT_DIR$/.idea/Git.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestModel/TestModel.iml" filepath="$PROJECT_DIR$/TestModel/TestModel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/genericity/genericity.iml" filepath="$PROJECT_DIR$/genericity/genericity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../Desktop/orm_user list/orm_user.iml" filepath="$PROJECT_DIR$/../../../../Desktop/orm_user list/orm_user.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflect/reflect.iml" filepath="$PROJECT_DIR$/reflect/reflect.iml" />
     </modules>
   </component>
