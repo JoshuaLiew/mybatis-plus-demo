@@ -6,9 +6,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 public class FieldDemo1 {
-@SuppressWarnings("all")
-    public static void main(String[] args) {
-        Class c1 = User.class;
+
+    public static void main(String[] args) throws Exception {
+        Class<User> c1 = User.class;
 //        Class c2 = Class.forName("com.woniuxy.reflect.model.User"); // .forName方法会导致类加载，会执行类中的静态代码块
 //        Class c3 = new User().getClass();
 
@@ -24,6 +24,22 @@ public class FieldDemo1 {
 
             System.out.println("-----------------------");
         }
+
+        Field nameField = c1.getDeclaredField("name");
+        nameField.setAccessible(true);  //暴力反射
+
+        Object user = c1.newInstance();
+        nameField.set(user,"Joshua");
+        System.out.println("姓名：" + nameField.get(user));
+
+
+
+
+
+
+
+
+
 
         //反编译类的属性
         StringBuilder sb = new StringBuilder();
